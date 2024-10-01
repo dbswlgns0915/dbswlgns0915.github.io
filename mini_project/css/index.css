@@ -1,0 +1,111 @@
+/* header 부분 시작==============================*/
+body{
+  background-size: contain;
+  object-fit: fill;
+  scrollbar-width: none;
+  background-image: url(../img/annie-spratt-xTaOPMa6wAE-unsplash.jpg);
+}   
+.toptop{ 
+    display: flex;
+    justify-content: space-between;
+  }
+
+  /* 오른쪽 로그인, 고객의 소리, store 묶음  */
+  .top_util1{ 
+    width: 0 auto;
+    height: 30px;
+    margin-top: 20px;
+  }
+  .top_util1 li{
+    margin: 5px 5px;
+    display: inline-block;
+  }
+  .top_util1 a:hover{
+    text-decoration: underline;
+  }
+
+  /*왼쪽 로고 부분(logo_first1)*/  
+  .logo_first1>a{
+    display: flex;
+    margin-bottom: 10px;
+  }
+  .logo_first1 img{
+    width : 101px;
+    height : 45px;
+  }
+  .logo_first1 span{
+    font-size: 35px;
+    margin-bottom: 6px;
+  }
+  /*왼쪽 로고 부분(logo_first1)*/  
+
+    .topnav{ /*============== 가운데 메뉴*/
+      text-align: center;
+      margin-bottom: 7px;
+    }
+    .topnav>ul{
+      display: flex;
+      text-align: center;
+      margin: 10px;
+      padding-left: 45px;
+    }
+    .topnav>ul>li{
+      text-align: center;
+      display: inline-block;
+      width: 170px;
+    }
+    .topnav a{
+      display: block; 
+      padding: 10px;
+    }
+    .topnav a:hover{
+      background-color: rgb(251, 236, 178);
+      border-radius: 20px;
+    }
+/*header 끝========================================================*/
+   
+/*middle + video 부분 ==========================*/
+      .middle{ /* 가운데 이미지 3개*/
+      display: flex;
+      justify-content: space-around;
+      height: 298px;
+      }
+      .mainvideo{ /* 소개영상 글씨== */
+      text-align: center;
+      font-size: 30px;
+      height: 50px;
+      }
+      .mainvideo2{ /* 소개 영상======*/
+        width: 100%; max-width: 100%; height: auto;
+        height: 400px;
+      }
+/*middle + video 부분 끝 ==========================*/
+
+/* footer 부분 ==================================== */
+ /*footer 윗부분*/
+  .footertext1{
+    margin: 10px 0px;
+  }
+  .footertext1>ul{
+    text-align: center;
+  }
+  .footertext1 a{
+   font-weight: bold;
+  }
+  .footertext1 li{
+    display: inline-block;
+    margin: 0px 10px;
+  }
+  .footertext1 img{
+    width: 36px;
+    height: 16px;
+  }
+  .footertext1 a:hover{
+    text-decoration: underline;
+  }
+ /*footer 아랫부분*/
+  .footertext2{
+    text-align: center;
+    margin: 10px 0px;
+  }
+/* footer 끝 ==================================== */

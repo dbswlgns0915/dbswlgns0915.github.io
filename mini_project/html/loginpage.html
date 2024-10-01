@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>로그인페이지</title>
+  <link rel="stylesheet" href="../css/default.css">
+  
+  <link rel="stylesheet" href="../css/login.css">
+  
+</head>
+<body>
+
+  <div class="header"> <!-- 헤더 부분 -->
+
+    <div class="toptop"> <!--상단 로고 + 로그인 부분-->
+  
+      <div class="logo_first1"> <!--로고부분-->
+        <a href="../indexpage.html"><img src="../img/logo_orange.jpg" alt="로고이미지" >
+        <span>&nbsp;&nbsp;Loyh Roasters<span></a>
+      </div> <!--로고부분 끝-->
+    
+      <div class="top_util1"> <!--로그인부분-->
+              <a class="top_members">
+                <li><a href="./loginpage.html">로그인</a></li>
+                <li>|</li>
+                <li><a href="./makemember.html" target="_blank">회원가입</a></li>
+                <li>|</li>
+                <li><a href="https://smartstore.naver.com/loyh">&nbsp;store</a></li>
+      </div> <!--로그인부분 끝-->
+  
+    </div><!--상단 로고 + 로그인 부분 끝-->
+    
+    
+    <div class="topnav"> <!--상단 메뉴부분-->
+      <ul>
+        <li><a href="./menupage.html">메 뉴</a></li> <!-- 시그니처도 소개 쪽에 넣으면 좋을 듯 -->
+        <li><a href="./noticepage.html">게시판</a ></li>
+        <li><a href="#">커뮤니티</a> </li>
+        <li><a href="#">방문 후기</a> </li>
+        <li><a href="./mappage.html">찾아오시는길</a></li>
+      </ul>
+    </div> <!--상단 메뉴부분 끝-->
+  </div> <!-- 헤더 부분 끝 -->
+
+
+
+
+  <!--로그인부분 ===================================================-->
+  <div class="wrap">
+  
+    <!-- 로그인 테이블 시작-->
+    <div id="tableBox">
+      <form action="" method="post" name="membership">
+        <table class="loginTable">
+          <tbody>
+            <!-- 로그인 창 1번 줄 "welcome"--> 
+            <tr>
+            <td class="welcome"><li> Loyh Roasters에 오신 것을 환영합니다!</li></td>
+            </tr>
+
+            <!-- 로그인 창 2번 줄 "input" -->
+            <tr> 
+            <td><li><Input type="text" name="logIn" class="input" placeholder=" 아이디 입력"></li></td>
+            </tr>
+          
+            <!-- 로그인 창 3번 줄 "input"-->
+            <tr> 
+            <td><li><Input type="password" name="password" class="input" placeholder=" 비밀번호 입력"></li></td>
+            </tr>
+            
+            <!-- 로그인 창 4번 줄 "save"--> 
+            <tr> 
+              <td class="save">
+                <li>
+                  <Input type="checkbox" name="save" id="check1">
+                  <label for="check1"></label> 
+                </li>
+                 &nbsp;아이디 저장
+              </td>
+            </tr>
+            
+            <!--로그인 창 5번 줄 "loginbtn"--> 
+      
+            <tr> 
+            <td><button type="button" class="loginbtn" name="로그인">&nbsp;로그인</button>
+                
+            </tr>
+            <!--로그인 창 6번 줄 "ipsearch"-->
+            <tr> 
+            <td class="ipsearchBox"><a href="#" target="_blank" class="ipsearch"><span class="ip1">아이디 찾기</span></a>&nbsp;
+            <a href="#" target="_blank" class="ipsearch"><span class="ip2">비밀번호 찾기</span></a>
+            
+            </td><br>
+            </tr>
+      
+            <!-- 로그인 창 7번 줄 "imgsize"--> 
+            <tr class ="imgsize"> 
+            <td><a href="https://naver.com" target="_blank"><img src="../img/네이버이미지.jpg"></a>&nbsp;&nbsp;
+            <a href="https://www.kakaocorp.com/page/"target="_blank"><img src="../img/카카오이미지.jpg"></a></td>
+                
+            </tr>
+        
+            <!-- 로그인 창 8번 줄  "lastline"-->
+            <tr class ="lastline"> 
+            <td> <li>로이로스터스가 처음이신가요?</li> <br>
+            <a href="./makemember.html">
+              <button type="button" class="register" name="회원가입하기">회원&nbsp;가입하기</td></button>
+            </a>
+            
+                   
+            </tr>
+          </tbody> <!--tbody끝-->
+        </table>  <!-- 로그인 테이블  끝-->
+      </form> <!--form 태그 끝-->
+    </div> <!--로그인 테이블(id=tableBox) 끝-->
+
+  </div> <!--wrap 끝-->
+  <!--로그인부분  끝===================================================-->
+
+
+  <footer> <!--footer시작-->
+    <div class="footertext1"> <!--footer 윗부분-->
+      <ul>
+        <li><a href="../indexpage.html"><img src="../img/logo_orange.jpg" alt="로고이미지">&nbsp;로이로스터스</a></li>
+        <!--나중에 이 로고 누르면 index페이지로 가도록 링크 걸기!-->
+        <li> | </li>
+        <li><a href="#">정보 공개 알림</a></li>
+        <li> | </li>
+        <li><a href="#">개인정보처리방침</a></li>
+        <li> | </li>
+        <li><a href="#">신규입점 제의</a></li>
+        <li> | </li>
+        <li><a href="#">제휴제안</a></li>
+      </ul>
+    </div>
+    <br>
+    <hr>
+    <div class="footertext2">  <!--footer 아래부분-->
+      (우) 17074 경기 용인시 기흥구 용구대로 1910 1층  /  대표전화 : 0507-1442-7917
+    </div>
+
+  </footer> <!--footer끝-->
+
+</body>
+</html>

@@ -1,0 +1,193 @@
+ /* header 부분 시작====================================================*/
+
+    /* 상단 로고, 상호명, 로그인, 고객의 소리, Store 전체 묶음 */
+    .toptop{ 
+      display: flex;
+      justify-content: space-between;
+    }
+
+    /* 오른쪽 로그인, 고객의 소리, store 묶음  */
+    .top_util1{ 
+      width: 0 auto;
+      height: 30px;
+      margin-top: 20px;
+    }
+    .top_util1 li{
+      margin: 5px 5px;
+      display: inline-block;
+    }
+    .top_util1 a:hover{
+      text-decoration: underline;
+    }
+  
+    /*왼쪽 로고 부분(logo_first1)*/  
+    .logo_first1>a{
+      display: flex;
+      margin-bottom: 10px;
+    }
+    .logo_first1 img{
+      width : 101px;
+      height : 45px;
+    }
+    .logo_first1 span{
+      font-size: 35px;
+      margin-bottom: 6px;
+    }
+    /*왼쪽 로고 부분(logo_first1)*/  
+
+      .topnav{ /*가운데 메뉴*/
+        text-align: center;
+        margin-bottom: 20px;
+      }
+      .topnav>ul{
+        display: flex;
+        text-align: center;
+        margin: 10px;
+        padding-left: 45px;
+      }
+      .topnav>ul>li{
+        text-align: center;
+        display: inline-block;
+        width: 170px;
+      }
+      .topnav a{
+        display: block; 
+        padding: 10px;
+      }
+      .topnav a:hover{
+        background-color: rgb(251, 236, 178);
+        border-radius: 20px;
+      }
+  /*header 끝========================================================*/
+
+  /*게시판 본문 내용=================================================*/
+  .notice_body{
+    width: 100%;
+  }
+  /*게시판 위 메뉴(notice_top)*/
+  .notice_top{
+    width: 100%;
+    margin: 30px 0px;
+  }
+  .notice_top>ul{
+    display: flex;
+    text-align: center;
+    margin: 10px;
+    padding-left: 45px;
+  }
+  .notice_top li{
+    border: 1px solid rgb(230, 230, 230);
+    border-right: none;
+    text-align: center;
+    display: inline-block;
+    width: 210px;
+  }
+  .notice_top li:last-child{
+    border-right:1px solid rgb(230, 230, 230);
+  }
+  
+  .notice_top a{
+    display: block;
+    padding: 10px;
+    color: rgb(96, 96, 96);
+  }
+  .list_head{
+    background-color: rgb(251, 236, 178);
+    font-weight: 550;
+    color: rgb(0, 0, 0);
+  }
+  .notice_top a:hover:not(.list_head){
+    background-color: rgb(251, 236, 178);
+    color: rgb(0, 0, 0);
+    font-weight: 550;
+  }
+
+  /*게시판 중간 리스트(notice_middle)*/
+  .notice_middle{
+    width: 960px;
+  }
+
+  .thead{
+    font-weight: bold;
+  }
+  .notice_middle>table{
+  border-collapse: collapse;
+  }
+  .notice_middle tr{
+  border-bottom: 1px solid black;
+  }
+  .notice_middle .thead{
+    border-top: 1px solid black;
+  }
+  .t_1{
+    width: 90px;
+  }
+  .t_2{
+    width: 720px;
+  }
+  .t_2:not(.thead .t_2){
+    text-align: left;
+    padding-left: 15px;
+  }
+  .t_3{
+    width: 150px;
+  }
+  .tb{
+    text-align: center;
+    vertical-align: middle;
+    height: 60px;
+  }
+ 
+  .notice_middle a:hover{
+    text-decoration: underline;
+  }
+
+  /*게시판 아래 순서목록(notice_bottom)*/
+  .notice_bottom{
+    width: 900px;
+    margin : 30px 0px;
+    display: flex;
+    justify-content: center;
+  }
+  .notice_bottom li{
+    display: inline-block;
+  }
+  .notice_bottom img{
+    width: 25px;
+    height: 25px;
+  }
+  .notice_bottom a{
+    display: block;
+    padding: 5px 15px;
+  }
+  .notice_bottom a:hover{
+    font-weight: bold;
+  }
+
+  /*게시판 본문 내용 끝=================================================*/
+
+  /* footer 부분 ==================================== */
+   /*footer 윗부분*/
+   .footertext1{
+      margin: 10px 0px;
+    }
+    .footertext1>ul{
+      text-align: center;
+    }
+    .footertext1 li{
+      display: inline-block;
+      margin: 0px 10px;
+    }
+    .footertext1 img{
+      width: 36px;
+      height: 16px;
+    }
+    .footertext1 a:hover{
+      text-decoration: underline;
+    }
+   /*footer 아랫부분*/
+    .footertext2{
+      text-align: center;
+      margin: 10px 0px;
+    }
+  /* footer 끝 ==================================== */

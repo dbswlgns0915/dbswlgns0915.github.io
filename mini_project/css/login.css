@@ -1,0 +1,227 @@
+body{
+  width: 1500px;
+    
+}
+
+/* header 부분 시작====================================================*/
+.header{
+  width: 960px;
+  margin-left: 250px;
+}
+/* 상단 로고, 상호명, 로그인, 고객의 소리, Store 전체 묶음 */
+.toptop{ 
+    display: flex;
+    justify-content: space-between;
+  }
+
+  /* 오른쪽 로그인, 고객의 소리, store 묶음  */
+  .top_util1{ 
+    width: 0 auto;
+    height: 30px;
+    margin-top: 20px;
+  }
+  .top_util1 li{
+    margin: 5px 5px;
+    display: inline-block;
+  }
+  .top_util1 a:hover{
+    text-decoration: underline;
+  }
+
+  /*왼쪽 로고 부분(logo_first1)*/  
+  .logo_first1>a{
+    display: flex;
+    margin-bottom: 10px;
+  }
+  .logo_first1 img{
+    width : 101px;
+    height : 45px;
+  }
+  .logo_first1 span{
+    font-size: 35px;
+    margin-bottom: 6px;
+  }
+  /*왼쪽 로고 부분(logo_first1)*/  
+
+    .topnav{ /*============== 가운데 메뉴*/
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    .topnav>ul{
+      display: flex;
+      text-align: center;
+      margin: 10px;
+      padding-left: 45px;
+    }
+    .topnav>ul>li{
+      text-align: center;
+      display: inline-block;
+      width: 170px;
+    }
+    .topnav a{
+      display: block; 
+      padding: 10px;
+    }
+    .topnav a:hover{
+      background-color: rgb(251, 236, 178);
+      border-radius: 20px;
+    }
+/*header 끝========================================================*/
+
+
+/*로그인 부분========================================================*/
+/*전체 박스 크기*/
+.wrap{
+  width: 100%;
+  background-image: url(../img/로이배경_2.png);
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+  
+} 
+
+
+/*로그인 form table*/
+.loginTable{
+  width: 400px;
+  height: 500px;
+  background-color: rgb(250, 248, 244);
+  /* border: 2px solid rgb(243, 185, 110); */
+  border-radius: 10px;                         
+  align-items: center;
+  margin: 10px;
+  padding: 10px;
+}
+/* 로그인 창 1번 줄 "welcome" */
+.welcome{
+  padding: 5px 15px;
+  text-align: center; 
+  color: rgb(209, 150, 67);
+}
+ /* 로그인 창 2번 줄 "input" */
+.input{
+   width: 350px;
+   height: 40px;
+   border:none;
+   border-bottom: 2px solid rgb(194, 40, 40);
+   padding: 5px;
+   margin: 5px;
+   font-size: 16px;
+}
+/* 로그인 창 7번 줄 "imgsize" */
+.imgsize img{
+   width: 30px;
+   height: 30px;
+   position: relative;
+   left: 120px;
+   padding: 10px 10px;
+
+}
+/* 로그인 창 6번 줄 "ipsearch" */
+.ipsearchBox span{
+  display: inline-block;
+  padding: 10px;
+ }
+/*아이디 찾기*/
+.ip1{
+   padding-right: 10px;
+   text-align: center;
+}
+/*비밀번호 찾기*/
+.ip2{
+   padding-left: 10px;
+}
+
+
+/* 로그인 창 4번 줄 "save" */
+.save{
+   padding: 15px;
+   display: flex;
+}
+
+/* 체크박스 모양 변경 */ 
+
+input[type="checkbox"]{
+    display: none;
+    margin-top: 5px;
+  }
+input[type="checkbox"] + label{
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    border:3px solid #707070;
+    border-radius: 15px;
+    position: relative;
+  }
+ input[id="check1"]:checked + label::after{
+    content:'✔';
+    color: orangered;
+    font-size: 13px;
+    font-weight: bold;
+    width: 15px;
+    height: 15px;
+    text-align: center;
+    position: absolute;
+    left: 0;
+    bottom: 2px;
+  }
+
+/* 로그인 창 6번 줄 "ipsearch" */
+.ipsearch{      
+   padding: 20px;
+   margin: 10px;
+}   
+
+
+/* 로그인 창 8번 줄  "lastline" */
+.lastline{
+  text-align: center;
+}
+.lastline li{
+  font-size: 13px;
+}
+/* 로그인 창 5번 줄 "loginbtn" */
+.loginbtn{ 
+   background-color: rgb(238, 182, 108);
+    width: 370px;
+    height: 40px;
+    border: wheat;
+}
+/* 로그인 창 8번 줄  "lastline" - 회원가입버튼 */
+.register{ 
+   background-color: rgb(238, 182, 108);
+   width: 370px;
+   height: 40px;
+   border: wheat;
+}
+
+
+/*로그인 부분 끝========================================================*/
+
+/* footer 부분 ==================================== */
+
+
+/*footer 윗부분*/
+ .footertext1{
+    margin: 10px 0px 0px 0px;
+  }
+  .footertext1>ul{
+    text-align: center;
+  }
+  .footertext1 li{
+    display: inline-block;
+    margin: 0px 10px;
+  }
+  .footertext1 img{
+    width: 36px;
+    height: 16px;
+  }
+  .footertext1 a:hover{
+    text-decoration: underline;
+  }
+ /*footer 아랫부분*/
+  .footertext2{
+    text-align: center;
+    margin: 10px 0px;
+  }
+/* footer 끝 ==================================== */

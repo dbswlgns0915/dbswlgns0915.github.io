@@ -1,0 +1,154 @@
+ /* header 부분 시작====================================================*/
+
+    /* 상단 로고, 상호명, 로그인, 고객의 소리, Store 전체 묶음 */
+    .toptop{ 
+      display: flex;
+      justify-content: space-between;
+    }
+
+    /* 오른쪽 로그인, 고객의 소리, store 묶음  */
+    .top_util1{ 
+      width: 0 auto;
+      height: 30px;
+      margin-top: 20px;
+    }
+    .top_util1 li{
+      margin: 5px 5px;
+      display: inline-block;
+    }
+    .top_util1 a:hover{
+      text-decoration: underline;
+    }
+  
+    /*왼쪽 로고 부분(logo_first1)*/  
+    .logo_first1>a{
+      display: flex;
+      margin-bottom: 10px;
+    }
+    .logo_first1 img{
+      width : 101px;
+      height : 45px;
+    }
+    .logo_first1 span{
+      font-size: 35px;
+      margin-bottom: 6px;
+    }
+    /*왼쪽 로고 부분(logo_first1)*/  
+
+      .topnav{ /*============== 가운데 메뉴*/
+        text-align: center;
+        margin-bottom: 20px;
+      }
+      .topnav>ul{
+        display: flex;
+        text-align: center;
+        margin: 10px;
+        padding-left: 45px;
+      }
+      .topnav>ul>li{
+        text-align: center;
+        display: inline-block;
+        width: 170px;
+      }
+      .topnav a{
+        display: block; 
+        padding: 10px;
+      }
+      .topnav a:hover{
+        background-color: rgb(251, 236, 178);
+        border-radius: 20px;
+      }
+  /*header 끝========================================================*/
+
+  /* 상단 네비게이션 바 */
+    .topnav1{
+    overflow: hidden;
+    background-color: rgb(252, 79, 0);
+    text-align: center;
+    }
+    .topnav1 a{
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    }
+    .topnav1 a:hover {
+    background-color: #ddd;
+    color: black;
+    }
+  /* 상단 네비게이션 바 끝 */
+
+  /* 검색창 */
+   .searchArea{
+    float: right;
+    margin: 10px;
+   }
+  /* 검색창 끝 */
+   h1{
+    text-align: center;
+    margin: 30px;
+   }
+  
+  /* 이미지 갤러리 부분 */
+  .image_gallery{
+    width: 100%;
+    margin: 30px 0px 0px 0px;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+  .images{
+    width: 226px;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    border: 2px solid rgb(168, 167, 167);
+  }
+  .images:hover{
+    border: 2px solid rgb(252, 79, 0);
+  }
+  .images>a{
+    display: block;
+    width: 226px;
+    height: 128px;
+  }
+  .images>a>img{
+    width: 226px;
+    height: 128px;
+  }
+  .images>div{
+    width: 226px;
+    text-align: center;
+    padding: 16px 0px;
+  }
+  /* 이미지 갤러리 끝 */
+
+  /* footer 부분 ==================================== */
+   /*footer 윗부분*/
+    .footertext1{
+      margin: 10px 0px;
+    }
+    .footertext1>ul{
+      text-align: center;
+    }
+    .footertext1 li{
+      display: inline-block;
+      margin: 0px 10px;
+    }
+    .footertext1 img{
+      width: 36px;
+      height: 16px;
+    }
+    .footertext1 a:hover{
+      text-decoration: underline;
+    }
+   /*footer 아랫부분*/
+    .footertext2{
+      text-align: center;
+      margin: 10px 0px;
+    }
+  /* footer 끝 ==================================== */

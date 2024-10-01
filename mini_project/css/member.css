@@ -1,0 +1,74 @@
+.wrap{
+  width: 960px;
+  margin: 0 auto;
+}
+  table {
+      width: 500px;
+      height: 550px;
+      margin: auto;
+  }
+
+  .email {
+      width: 250px;
+      height: 32px;
+      font-size: 15px;
+      border: 0;
+      border-color: lightgray;
+      border-radius: 15px;
+      outline: none;
+      padding-left: 10px;
+      background-color: rgb(233,233,233);
+  }
+  .text {
+      width: 500px;
+      height: 32px;
+      font-size: 15px;
+      border: 0;
+      border-radius: 15px;
+      outline: none;
+      padding-left: 10px;
+      background-color: rgb(233,233,233);
+      margin: 6px 0px;
+  }
+  select {
+      width: 200px;
+      height: 32px;
+      font-size: 15px;
+      border: 1;
+      border-color: lightgray;
+      border-radius: 15px;
+      outline: none;
+      padding-left: 10px;
+  }
+  .logo_text{
+    display: flex;
+    margin-bottom: 10px;
+    justify-content: center;
+  }
+  .logo{
+    width: 35px;
+    height: 35px;
+  }
+  .logo_text span{
+    display: block;
+    margin-left: 10px;
+    margin-top: 5px;
+    font-size: 20px;
+    font-weight: bold;
+  }
+  .btn {
+      width: 280px;
+      height: 32px;
+      font-size: 15px;
+      border: 0;
+      border-radius: 15px;
+      outline: none;
+      padding-left: 10px;
+      background-color: rgb(255, 164, 103);
+  }
+ 
+  .submit_btn{
+      text-align: center;
+      display: block;
+      margin: 25px;
+  }

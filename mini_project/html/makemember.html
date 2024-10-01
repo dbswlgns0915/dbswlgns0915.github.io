@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>회원가입</title>
+
+<link rel="stylesheet" href="../css/member.css">
+
+<script src="https://t1.daumcdn.net/mapjsapi/bundle/postcode/prod/postcode.v2.js"></script>
+  <script>
+
+    document.addEventListener("DOMContentLoaded", function(){
+        const zipbtn = document.querySelector("#zipbtn");
+        const zipcode = document.querySelector("#post");
+        const address1 = document.querySelector("#address1");
+        const address2 = document.querySelector("#address2"); 
+        zipbtn.addEventListener("click", function(){
+            new daum.Postcode({
+            oncomplete: function(data) {
+              zipcode.value = data.zonecode; // 우편번호 넣기
+
+              let fullAddress=""; // 전체 주소
+              let extendAddress=""; // 추가 주소, 건물 동명 등....
+
+              // 기본 주소
+              if(data.userSelectedType==="R"){ // 도로명 선택
+                fullAddress = data.roadAddress;
+              }else{ // 지번을 선택
+                fullAddress = data.jibunAddress;
+              }
+
+              // 추가 건물명에 대한 설정
+              if(data.bname !== ""){ // 법정동/법정리 이름이 있으면
+                extendAddress += data.bname;
+              }
+              if(data.buildingName !== ""){ // 빌딩명이 있으면
+                extendAddress += (extendAddress !=="")?", " + data.buildingName : data.buildingName;
+              }
+
+              fullAddress +=((extendAddress !=="")? "(" + extendAddress + ")" : "");
+
+              address1.value = fullAddress;
+              address2.focus(); // 상세주소칸에 커서를 놓기
+
+          }
+      }).open();
+
+    });
+
+});
+  </script>
+</head>
+<body>
+  <div class="wrap">
+
+    <form action="login.html" method="post" name="makemember">
+
+      <table>
+      <tr >
+        <td class="logo_text">
+          <a href="../indexpage.html"><img src="../img/logo_big.jpg" alt="" class="logo"></a>
+           <span>회원가입</span>
+        </td>
+      </tr>
+      <tr><td>아이디</td></tr>
+      <tr><td><input type="text" class="text" required></td></tr>
+      <tr><td>비밀번호</td></tr>
+      <tr><td><input type="password" class="text"></td></tr>
+      <tr><td>비밀번호 확인</td></tr>
+      <tr><td><input type="password" class="text"></td></tr>
+      <tr><td>이름</td></tr>
+      <tr><td><input type="text" class="text"></td></tr>
+      <tr><td>생년월일</td></tr>
+      <tr><td><input type="date" class="text"></td></tr>
+      <tr><td>이메일</td></tr>
+      <tr>
+          <td><input type="text" class="email"> @ 
+              <select>
+                  <option>naver.com</option>
+                  <option>gmail.com</option>
+                  <option>daum.net</option>
+                  <option>nate.com</option>
+              </select>
+          </td>
+      </tr>
+     
+      <tr>  <!-- 우편번호 버튼이 있는 부분 -->
+          <td class="tTitle"><label for="post">우편번호
+              <button type="button" class="btn_1" id="zipbtn">우편번호</button>
+          </label></td>  <!-- 타이틀 부분-->
+      </tr>
+      <tr>
+          <td class="tContent">
+            
+            <input type="text" class="text" name="zipcode" id="post">
+          </td>
+        </tr>
+        <tr>  <!-- 주소(도로명, 지번, 빌딩번호)-->
+          <td class="tTitle"><label for="address1">주소</label></td>  <!-- 타이틀 부분-->
+        </tr>
+        <tr> 
+          <td class="tContent"> <!-- 읽기만 가능, 수정 불가 -->
+            <input type="text" class="text" name="address1" id="address1" readonly>
+          </td>
+        </tr>
+        <tr>  <!-- 상세주소 -->
+          <td class="tTitle"><label for="address2">상세주소</label></td>  <!-- 타이틀 부분-->
+        </tr>
+        <tr>
+          <td class="tContent">
+            <input type="text" class="text" name="address2" id="address2">
+          </td>
+        </tr>
+        <!--가입하기 버튼-->
+        <tr><td class="submit_btn"><input type="submit" value="가입하기" class="btn" onclick="alert('가입 성공!')"></td></tr>
+      </table>
+  
+  
+  </form>
+
+  </div>
+
+</body>
+</html>
